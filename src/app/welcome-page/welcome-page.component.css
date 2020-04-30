@@ -1,0 +1,119 @@
+.contain-page{
+width:100%;
+height:auto;
+min-height:100vh;
+background-color:#222831;
+overflow-x:hidden;
+}
+
+.nvbr{
+  background-color: #222831;
+  padding: 20px 0px 10px 0px ;
+  height:70px;
+}
+
+.nvbr li a{
+  color: white;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-brand{
+margin-top:0px;
+margin-left:30px;
+}
+
+.language{
+color:white !important;
+font-size:15px;
+font-family: 'Roboto', sans-serif;
+border:1px solid gray;
+border-radius:7px;
+padding:4px 15px 4px 15px;
+background:none;
+outline:none;
+font-size:13px;
+}
+
+.nav-login{
+margin-right:60px;
+}
+
+
+.language-option{
+border:0px;
+outline:none;
+color:black;
+font-family: 'Roboto', sans-serif;
+}
+
+.li-link{
+width:110px;
+margin-right:10px;
+}
+
+
+.big-text{
+font-family: 'Yantramanav', sans-serif;
+color:white;
+font-size:45px;
+}
+
+.header-row{
+height:75vh;
+}
+
+.presentation-img{
+background:url('../../assets/imgs/page.jpg');
+background-size:cover;
+width:400px;
+height:200px;
+}
+
+.presentation-div{
+position:absolute;
+background:#222831;
+height:200px;
+width:500px;
+opacity:0.5;
+}
+
+.signin-btn{
+  border: none;
+  width: 100%;
+  background-color: #576574;
+  color: white;
+  outline:none;
+  border-radius:4px;
+  height:37px;
+}
+
+.signin-btn:hover{
+  background-color: #222f3e;
+  color:  #dbedf3;
+}
+
+.signin-input{
+  width: 100%;
+  height:75px;
+  font-size:14px;
+}
+
+.mat-card-form{
+background:white;
+}
+
+.sign-title{
+color:#fc5c65;
+font-size:18px;
+padding-left:170px;
+}
+
+.signin-with{
+font-size:12px;
+padding:5px 10px 5px 10px;
+color:white;
+border-radius:5px;
+background:#222f3e;
+border:none;
+}

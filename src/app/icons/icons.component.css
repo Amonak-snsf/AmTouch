@@ -1,0 +1,45 @@
+#frame {
+  min-height: calc(170px - 0px);
+  max-height: calc(170px - 0px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background:#222831;
+  color:white;
+  font-size:14px;
+  width:330px;
+  background:black;
+  border-radius:3px;
+  padding:4px;
+  margin-top:3px;
+}
+
+#frame::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+#frame::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius:30px !important;
+}
+
+#frameRow{
+min-height:250px;
+height:auto;
+max-height:auto !important;
+}
+
+.title{
+color:#eeeeee;
+font-size:13px;
+}
+
+
+.noBtnStyle{
+border:none;
+padding:0px;
+outline:none;
+margin:5px;
+background:none;
+font-size:25px;
+color:#22a6b3;
+}

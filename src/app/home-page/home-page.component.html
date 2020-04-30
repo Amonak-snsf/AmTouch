@@ -1,0 +1,160 @@
+<div class="container-fluid contain-page">
+  <mat-card class="no-mat-card">
+    <div class="row bg-black top-nav">
+      <div class="col-9">
+        <img src="../../assets/imgs/logo-orange.png" width="40px">
+        <button class="nav-btn ml-3"><i class="fas fa-cog"></i>&nbsp;&nbsp;Setting</button>
+        <button class="nav-btn ml-3"><i class="fas fa-shapes"></i>&nbsp;&nbsp;Shapes</button>
+        <button class="nav-btn ml-3"><i class="fas fa-star"></i>&nbsp;&nbsp;Stickers</button>
+        <button class="nav-btn ml-3"><i class="fas fa-cubes"></i>&nbsp;&nbsp;Icons</button>
+        <button class="nav-btn ml-3">
+          <i class="fas fa-font"></i>&nbsp;&nbsp;<select class="fontSelect" (change)="changeFont()" id="fontSelect" name="font">
+            <option class="roboto font-option"><font size="3">Roboto</font></option>
+            <option class="noto font-option"><font size="3">Noto Serif</font></option>
+            <option class="rubik font-option"><font size="3">Rubik</font></option>
+            <option class="opensansc"><font size="3">Open Sans Condensed</font></option>
+            <option class="bangers"><font size="3">Bangers</font></option>
+            <option class="quicksand"><font size="3">Quicksand</font></option>
+            <option class="titilliumWeb"><font size="3">Titillium Web</font></option>
+            <option class="dancingScript"><font size="3">Dancing Script</font></option>
+            <option class="lobster"><font size="3">Lobster</font></option>
+            <option class="permanentMarker"><font size="3">Permanent Marker</font></option>
+            <option class="specialElite"><font size="3">Special Elite</font></option>
+            <option class="monoton"><font size="3">Monoton</font></option>
+            <option class="paytoneOne"><font size="3">Paytone One</font></option>
+            <option class="Merienda"><font size="3">Merienda</font></option>
+          </select>
+        </button>
+        <button class="nav-btn ml-3">
+          <i class="fas fa-text-height"></i>&nbsp;&nbsp;<select class="font-size-select" id="sizeSelect" name="size" (change)="changeSize()">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            <option>48</option>
+            <option>49</option>
+            <option>50</option>
+            <option>55</option>
+            <option>60</option>
+            <option>65</option>
+            <option>70</option>
+            <option>75</option>
+            <option>80</option>
+          </select>
+        </button>
+      </div>
+
+      <div class="col-3 d-flex justify-content-end align-items-center">
+        <mat-card-title class="username">
+          Yves Bernard SOMBORO
+        </mat-card-title>
+        <img mat-card-avatar src="../../assets/imgs/man.jpg"/>
+      </div>
+    </div>
+    <div class="row body-card">
+      <div class="col-2 left-nav p-0">
+        <button class="add-file mt-4 ml-4"><img src=".././assets/imgs/icons/add-white.png" width="18px" height="auto">&nbsp;&nbsp;New</button>
+        <button class="action-btn mt-4 text-left"><i class="fas fa-magic"></i><font class="text-btn-left">Magic wand</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-arrows-alt"></i><font class="text-btn-left">Move</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-crop-alt"></i><font class="text-btn-left">Crop</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-font"></i><font class="text-btn-left">Add text</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-eraser"></i><font class="text-btn-left">Rubber</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-pencil-alt"></i><font class="text-btn-left">Pensil</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-pencil-alt"></i><font class="text-btn-left">Cut</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-chess-board"></i><font class="text-btn-left">Background</font></button>
+        <button class="action-btn mt-2 text-left"><i class="fas fa-tint"></i><font class="text-btn-left">Filters</font></button>
+        <button class="camera-btn mt-2"><i class="fas fa-camera"></i>&nbsp;&nbsp;Camera</button>
+      </div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center" id="section-frame">
+            <div id="frame-row" class="">
+              <img class="template-style" src="../../assets/imgs/templates/simu5.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu6.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu7.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/man.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/fashion.png" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu3.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu1.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu2.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/sport.png" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/team2.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/welcome1.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/woman.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu7.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/man.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/fashion.png" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu3.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu1.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/simu2.jpg" width="50px" height="50px">
+              <img class="template-style" src="../../assets/imgs/templates/sport.png" width="50px" height="50px">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="display:none;">
+          <div class="col-8">
+            <app-white-paper></app-white-paper>
+          </div>
+          <div class="col-4 pt-4">
+            <app-nav-right></app-nav-right>
+          </div>
+        </div>
+        <div class="row" style="display:none">
+          <div class="col-12">
+            <app-image-dropper src="../../assets/imgs/simu4.jpg"></app-image-dropper>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-12">
+            <app-dragger-image></app-dragger-image>
+          </div>
+        </div>
+        <div class="add-text-div">
+          <div ngDraggable ngResizable contenteditable type="text" class="add-text-input" id="addTextId" (click)="editTextAgain()" (keyup.enter)="validAddText()">Add text...</div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
