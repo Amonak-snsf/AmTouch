@@ -2,9 +2,23 @@
   <div class="row">
     <div class="col-12 paper-col d-flex justify-content-center align-items-center">
       <mat-card class="paper p-0 bg-white">
+        <mat-card-content id="cropperId">
+          <app-image-dropper src="../../assets/imgs/djidji.jpg"></app-image-dropper>
+        </mat-card-content>
+        <mat-card-content class="add-text-div d-flex justify-content-center" id="writerId">
+          <div ngDraggable contenteditable type="text" class="add-text-input" id="addTextId" (click)="editTextAgain()" (focusout)="validAddText()">Add text...</div>
+        </mat-card-content>
+        <mat-card-content class="d-flex justify-content-center" id="drawerId">
+          <app-canvas class="drawing"></app-canvas>
+        </mat-card-content>
+        <mat-card-content id="eraserId">
+          <app-erase-magic class="eraser"></app-erase-magic>
+        </mat-card-content>
+<!--        <mat-card-content class="d-flex justify-content-left">-->
+<!--          <img  src="../../assets/imgs/man.jpg"/>-->
+<!--        </mat-card-content>-->
       </mat-card>
     </div>
   </div>
 <!--      <mat-card contenteditable class="paper p-0 bg-white"></mat-card>-->
-
 </div>

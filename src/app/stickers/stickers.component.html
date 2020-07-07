@@ -2,10 +2,15 @@
   <div class="row">
     <font class="title">Stickers</font>
   </div>
+  <mat-card id="stickerCard" class="p-0">
+    <mat-card-content class="stickImg" *ngIf="show">
+      <img ngDraggable src="../../assets/imgs/stickers/buy.png" width="40px">
+    </mat-card-content>
+  </mat-card>
   <div class="row">
     <div id="frame">
       <div id="frameRow">
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/buy.png" width="40px"></button>
+        <button (click)="buyStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/buy.png" width="40px"></button>
         <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce.png" width="40px"></button>
         <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce1.png" width="40px"></button>
         <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping.png" width="40px"></button>

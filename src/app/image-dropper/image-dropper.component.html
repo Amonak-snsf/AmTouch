@@ -1,19 +1,8 @@
-<div class="container">
-  <div class="row">
-    <div class="col-8 paper-col d-flex justify-content-center align-items-center">
-      <mat-card class="paper p-0 bg-white">
-        <img #image [src]="imageSource" crossorigin="anonymous">
-      </mat-card>
-    </div>
-    <div class="col-4">
-      <div class="row">
-        <div class="col-12 pt-3">
-          <app-nav-right></app-nav-right>
-        </div>
-        <div class="col-12 pt-3">
-          <img [src]="imageDestination" class="img-preview">
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="cropping">
+  <img #image [src]="imageSource" crossorigin="anonymous">
 </div>
+<div class="cropped" >
+  <img ngDraggable ngResizable [src]="imageDestination">
+<!--  <img ngDraggable ngResizable #container (resize)="onResize($event)" [direction]="[AngularResizeElementDirection.BOTTOM_RIGHT, AngularResizeElementDirection.BOTTOM]" [targetElement]="container" class="resize resize resize__bottom&#45;&#45;right resize-img resize__right" mat-card-image [style.width.px]="data.width" [style.height.px]="data.height" [src]="imageDestination">-->
+</div>
+

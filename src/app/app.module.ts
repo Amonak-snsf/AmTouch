@@ -17,6 +17,11 @@ import { DraggerImageComponent } from './dragger-image/dragger-image.component';
 import { ShapesComponent } from './shapes/shapes.component';
 import { StickersComponent } from './stickers/stickers.component';
 import { IconsComponent } from './icons/icons.component';
+import { DrawPaperComponent } from './draw-paper/draw-paper.component';
+import { MagicWandComponent } from './magic-wand/magic-wand.component';
+import { EraseMagicComponent } from './erase-magic/erase-magic.component';
+import { SensifaiSdkNgxModule } from 'sensifai-sdk-ngx';
+import { AngularResizeElementModule } from 'angular-resize-element';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,10 @@ import { IconsComponent } from './icons/icons.component';
     DraggerImageComponent,
     ShapesComponent,
     StickersComponent,
-    IconsComponent
+    IconsComponent,
+    DrawPaperComponent,
+    MagicWandComponent,
+    EraseMagicComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,8 @@ import { IconsComponent } from './icons/icons.component';
      MatProgressBarModule,
      BrowserAnimationsModule,
      ImageCropperModule,
-     AngularDraggableModule
+     AngularDraggableModule,
+     AngularResizeElementModule
   ],
   providers: [],
   bootstrap: [AppComponent]

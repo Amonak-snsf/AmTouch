@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StickersComponent implements OnInit {
 
+  show = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  buyStickFunction(){
+  this.show = !this.show;
   }
 
 }

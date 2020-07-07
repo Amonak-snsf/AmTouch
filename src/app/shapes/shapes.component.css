@@ -255,3 +255,101 @@ border-bottom: 50px solid #2980b9;
 position: relative;
 border-radius:5px;
 }
+
+#heart {
+      position: relative;
+      width: 50px;
+      height: 40px;
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 40px;
+      top: 0;
+      width: 40px;
+      height: 60px;
+      background: #2980b9;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+#egg {
+      display: block;
+      width: 46px;
+      height: 60px;
+      background-color: #2980b9;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+
+ #talkbubble {
+       width: 60px;
+       height: 40px;
+       background: #2980b9;
+       position: relative;
+       -moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
+       border-radius: 10px;
+     }
+     #talkbubble:before {
+       content: "";
+       position: absolute;
+       right: 100%;
+       top: 15px;
+       width: 0;
+       height: 0;
+       border-top: 8px solid transparent;
+       border-right: 18px solid #2980b9;
+       border-bottom: 8px solid transparent;
+     }
+
+    #moon {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          box-shadow: 15px 15px 0 0 #2980b9;
+        }
+
+#cross {
+      background: #2980b9;
+      height: 70px;
+      position: relative;
+      width: 10px;
+    }
+    #cross:after {
+      background: #2980b9;
+      content: "";
+      height: 10px;
+      left: -30px;
+      position: absolute;
+      top: 30px;
+      width: 70px;
+    }
+
+
+ #base {
+      background: #2980b9;
+      display: inline-block;
+      height: 35px;
+      margin-left: 20px;
+      margin-top: 35px;
+      position: relative;
+      width: 70px;
+    }
+    #base:before {
+      border-bottom: 25px solid #2980b9;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      content: "";
+      height: 0;
+      left: -5px;
+      position: absolute;
+      top: -25px;
+      width: 0;
+    }

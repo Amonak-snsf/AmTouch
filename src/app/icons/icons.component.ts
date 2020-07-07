@@ -12,9 +12,5 @@ export class IconsComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendIdFsms(){
-  (document.getElementById("iconId") as HTMLInputElement).value = "rfasmilewink";
-  document.getElementById("rfasmilewink").style.color = "red";
-  }
 
 }

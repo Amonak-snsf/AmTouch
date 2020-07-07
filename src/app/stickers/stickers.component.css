@@ -41,3 +41,20 @@ outline:none;
 margin:5px;
 background:none;
 }
+
+#stickerCard{
+width:auto;
+height:auto;
+border:0 !important;
+box-shadow:none !important;
+background:none !important;
+z-index:200;
+position:absolute;
+margin-top:0px;
+margin-left:-400px;
+}
+
+.stickImg:hover{
+cursor: -webkit-grab;
+cursor: grab;
+}

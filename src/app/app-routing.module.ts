@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { WhitePaperComponent } from './white-paper/white-paper.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { MagicWandComponent } from './magic-wand/magic-wand.component';
 
 
 const routes: Routes = [
 { path: 'paper', component: WhitePaperComponent },
 { path: 'home', component: HomePageComponent },
 { path: 'welcome', component: WelcomePageComponent },
+{ path: 'wand', component: MagicWandComponent },
 { path: '**', redirectTo: '/welcome', pathMatch: 'full'}
 ];
 
