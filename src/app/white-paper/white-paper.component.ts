@@ -10,8 +10,11 @@ import Cropper from 'cropperjs';
 })
 export class WhitePaperComponent implements OnInit {
 
+  @Input('src') img: any;
+
    image: File;
    output: any;
+
     constructor() {
       }
 

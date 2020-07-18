@@ -84,6 +84,7 @@ export class HomePageComponent implements OnInit {
     onFileChanged(event) {
       this.image = event.target.files[0];
       this.readImg(this.image);
+    }
 
     shapes(){
     document.getElementById("shapes").style.display = "block";
@@ -99,7 +100,7 @@ export class HomePageComponent implements OnInit {
     }
 
     icons(){
-    document.getElementById("shapes").style.display = "none";
+    document.getElementById("shapes").style.display = "block";
     document.getElementById("stickers").style.display = "none";
     document.getElementById("icons").style.display = "block";
     }
