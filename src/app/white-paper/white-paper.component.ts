@@ -10,6 +10,11 @@ import Cropper from 'cropperjs';
 })
 export class WhitePaperComponent implements OnInit {
 
+  @Input('src') img: any;
+
+   image: File;
+   output: any;
+
     constructor() {
       }
 
@@ -63,6 +68,22 @@ export class WhitePaperComponent implements OnInit {
       document.getElementById("writerId").style.zIndex = "1";
       document.getElementById("eraserId").style.zIndex = "100";
     }
+
+
+    readImg(img: File) {
+      let reader = new FileReader();
+      reader.onload = () => {
+        let data = reader.result;
+        this.output = data;
+      };
+      reader.readAsDataURL(img);
+    }
+    
+    onFileChanged(event) {
+      this.image = event.target.files[0];
+      this.readImg(this.image);
+    }
+
 
 
 

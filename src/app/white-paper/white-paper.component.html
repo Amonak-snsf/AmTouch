@@ -3,7 +3,10 @@
     <div class="col-12 paper-col d-flex justify-content-center align-items-center">
       <mat-card class="paper p-0 bg-white">
         <mat-card-content id="cropperId">
-          <app-image-dropper src="../../assets/imgs/prod5.jpg"></app-image-dropper>
+
+          <app-image-dropper src="{{img}}"></app-image-dropper>
+
+
         </mat-card-content>
         <mat-card-content class="add-text-div d-flex justify-content-center" id="writerId">
           <div ngDraggable contenteditable type="text" class="add-text-input" id="addTextId" (click)="editTextAgain()" (focusout)="validAddText()">Add text...</div>
