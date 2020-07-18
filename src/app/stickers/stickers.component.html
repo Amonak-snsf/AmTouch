@@ -3,34 +3,55 @@
     <font class="title">Stickers</font>
   </div>
   <mat-card id="stickerCard" class="p-0">
-    <mat-card-content class="stickImg" *ngIf="show">
-      <img ngDraggable src="../../assets/imgs/stickers/buy.png" width="40px">
+    <mat-card-content class="stickImg" >
+      <img *ngIf="show" ngDraggable src="../../assets/imgs/stickers/buy.png" width="40px">
+      <img id="stick1" ngDraggable src="../../assets/imgs/stickers/commerce.png" width="40px">
+      <img id="stick2" ngDraggable src="../../assets/imgs/stickers/commerce1.png" width="40px">
+      <img id="stick3" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping.png" width="40px">
+      <img id="stick4" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping1.png" width="40px">
+      <img id="stick5" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping2.png" width="40px">
+      <img id="stick6" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping3.png" width="40px">
+      <img id="stick7" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping4.png" width="40px">
+      <img id="stick8" ngDraggable src="../../assets/imgs/stickers/guarantee.png" width="40px">
+      <img id="stick9" ngDraggable src="../../assets/imgs/stickers/guarantee1.png" width="40px">
+      <img id="stick10" ngDraggable src="../../assets/imgs/stickers/interface.png" width="40px">
+      <img id="stick11" ngDraggable src="../../assets/imgs/stickers/label-silhouette.png" width="40px">
+      <img id="stick12" ngDraggable src="../../assets/imgs/stickers/label-silhouette1.png" width="40px">
+      <img id="stick13" ngDraggable src="../../assets/imgs/stickers/label-silhouette2.png" width="40px">
+      <img id="stick14" ngDraggable src="../../assets/imgs/logo-blue.png" width="70px">
+      <img id="stick15" ngDraggable src="../../assets/imgs/stickers/shopping.png" width="40px">
+      <img id="stick16" ngDraggable src="../../assets/imgs/stickers/sign.png" width="40px">
+      <img id="stick17" ngDraggable src="../../assets/imgs/stickers/signs.png" width="40px">
+      <img id="stick18" ngDraggable src="../../assets/imgs/stickers/star.png" width="40px">
+      <img id="stick19" ngDraggable src="../../assets/imgs/stickers/star-trek.png" width="40px">
+      <img id="stick20" ngDraggable src="../../assets/imgs/stickers/tag.png" width="40px">
+ 
     </mat-card-content>
   </mat-card>
   <div class="row">
     <div id="frame">
       <div id="frameRow">
         <button (click)="buyStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/buy.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce1.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping1.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping2.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping3.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping4.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/guarantee.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/guarantee1.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/interface.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette1.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette2.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/logo.jpg" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/shopping.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/sign.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/signs.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/star.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/star-trek.png" width="40px"></button>
-        <button class="noBtnStyle"><img src="../../assets/imgs/stickers/tag.png" width="40px"></button>
+        <button (click)="comStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce.png" width="40px"></button>
+        <button (click)="commerceStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce1.png" width="40px"></button>
+        <button (click)="shopStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping.png" width="40px"></button>
+        <button (click)="comshopStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping1.png" width="40px"></button>
+        <button (click)="comshop2StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping2.png" width="40px"></button>
+        <button (click)="comshop3StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping3.png" width="40px"></button>
+        <button (click)="comshop4StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/commerce-and-shopping4.png" width="40px"></button>
+        <button (click)="comshop5StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/guarantee.png" width="40px"></button>
+        <button (click)="guaranteeStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/guarantee1.png" width="40px"></button>
+        <button (click)="interfaceStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/interface.png" width="40px"></button>
+        <button (click)="labSil1StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette.png" width="40px"></button>
+        <button (click)="labSil2StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette1.png" width="40px"></button>
+        <button (click)="labSil3StickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/label-silhouette2.png" width="40px"></button>
+        <button (click)="logoStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/logo-blue.png" width="40px"></button>
+        <button (click)="shoppingStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/shopping.png" width="40px"></button>
+        <button (click)="signStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/sign.png" width="40px"></button>
+        <button (click)="signsStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/signs.png" width="40px"></button>
+        <button (click)="starStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/star.png" width="40px"></button>
+        <button (click)="startrekStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/star-trek.png" width="40px"></button>
+        <button (click)="tagStickFunction()" class="noBtnStyle"><img src="../../assets/imgs/stickers/tag.png" width="40px"></button>
       </div>
     </div>
   </div>
