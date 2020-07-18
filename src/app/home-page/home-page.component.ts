@@ -71,5 +71,21 @@ export class HomePageComponent implements OnInit {
       document.getElementById("eraserId").style.zIndex = "100";
     }
 
+    shapes(){
+    document.getElementById("shapes").style.display = "block";
+    document.getElementById("stickers").style.display = "none";
+    document.getElementById("icons").style.display = "none";
+    }
 
+    stickers(){
+    document.getElementById("shapes").style.display = "none";
+    document.getElementById("stickers").style.display = "block";
+    document.getElementById("icons").style.display = "none";
+    }
+
+    icons(){
+    document.getElementById("shapes").style.display = "none";
+    document.getElementById("stickers").style.display = "none";
+    document.getElementById("icons").style.display = "block";
+    }
 }

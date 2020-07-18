@@ -11,7 +11,6 @@ import Cropper from 'cropperjs';
 export class WhitePaperComponent implements OnInit {
 
     constructor() {
-
       }
 
     ngOnInit() {
@@ -64,5 +63,7 @@ export class WhitePaperComponent implements OnInit {
       document.getElementById("writerId").style.zIndex = "1";
       document.getElementById("eraserId").style.zIndex = "100";
     }
+
+
 
 }

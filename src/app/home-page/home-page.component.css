@@ -236,4 +236,14 @@ margin-top:25px;
 opacity:0;
 }
 
+.filters-btn{
+border:0;
+border-radius:3px;
+padding:6px 25px 6px 25px;
+color:white;
+font-size:13px;
+outline:none;
+background:#0C7AE9;
+margin-left:20px;
+}
 

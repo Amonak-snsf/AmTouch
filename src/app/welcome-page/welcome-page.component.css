@@ -64,10 +64,8 @@ height:75vh;
 }
 
 .presentation-img{
-background:url('../../assets/imgs/page.jpg');
-background-size:cover;
-width:400px;
-height:200px;
+width:100%;
+height:auto;
 }
 
 .presentation-div{
@@ -116,4 +114,12 @@ color:white;
 border-radius:5px;
 background:#222f3e;
 border:none;
+}
+
+
+.first-card{
+background: none;
+border:0px;
+box-shadow:none;
+color:white;
 }
