@@ -5,8 +5,7 @@ import resizable from 'jquery-resizable';
 import { ImageCroppedEvent } from 'ngx-image-cropper';
 import Cropper from 'cropperjs';
 import { AngularDraggableModule } from 'angular2-draggable';
-
-
+import {ImageService} from '../services/image.service'
 
 @Component({
   selector: 'app-home-page',
@@ -14,6 +13,8 @@ import { AngularDraggableModule } from 'angular2-draggable';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+ image: File;
+ output:any;
 
   constructor() {
 
@@ -70,6 +71,19 @@ export class HomePageComponent implements OnInit {
       document.getElementById("writerId").style.zIndex = "1";
       document.getElementById("eraserId").style.zIndex = "100";
     }
-
+  
+    readImg(img: File) {
+      let reader = new FileReader();
+      reader.onload = () => {
+        let data = reader.result;
+        this.output = data;
+      };
+      reader.readAsDataURL(img);
+    }
+    
+    onFileChanged(event) {
+      this.image = event.target.files[0];
+      this.readImg(this.image);
+    }
 
 }
