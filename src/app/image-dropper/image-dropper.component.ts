@@ -34,12 +34,14 @@ interface AngularResizeElementEvent {
 })
 export class ImageDropperComponent implements OnInit {
 
-
+ image : File;
+ output: any;
+ 
   @ViewChild("image", {static: false})
     public imageElement: ElementRef;
 
     @Input("src")
-    public imageSource: string;
+    public imageSource:any;
 
     public imageDestination: string;
     private cropper: Cropper;
@@ -96,4 +98,17 @@ export class ImageDropperComponent implements OnInit {
         console.log(this.data.width);
       }
 
+      readImg(img: File) {
+        let reader = new FileReader();
+        reader.onload = () => {
+          let data = reader.result;
+          this.output = data;
+        };
+        reader.readAsDataURL(img);
+      }
+      
+      onFileChanged(event) {
+        this.image = event.target.files[0];
+        this.readImg(this.image);
+      }
 }

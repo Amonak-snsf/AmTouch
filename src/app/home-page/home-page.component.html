@@ -4,9 +4,9 @@
         <div class="col-9 pt-2 pb-3">
           <img src="../../assets/imgs/logoB.png" width="40px" style="margin-top:-2px;">
           <button class="nav-btn ml-3"><i class="fas fa-cog"></i>&nbsp;&nbsp;Setting</button>
-          <button class="nav-btn ml-3" (click)="shapes()"><i class="fas fa-shapes"></i>&nbsp;&nbsp;Shapes</button>
-          <button class="nav-btn ml-3" (click)="stickers()"><i class="fas fa-star"></i>&nbsp;&nbsp;Stickers</button>
-          <button class="nav-btn ml-3" (click)="icons()"><i class="fas fa-cubes"></i>&nbsp;&nbsp;Icons</button>
+          <button class="nav-btn ml-3"><i class="fas fa-shapes"></i>&nbsp;&nbsp;Shapes</button>
+          <button class="nav-btn ml-3"><i class="fas fa-star"></i>&nbsp;&nbsp;Stickers</button>
+          <button class="nav-btn ml-3"><i class="fas fa-cubes"></i>&nbsp;&nbsp;Icons</button>
           <button class="nav-btn ml-3">
             <i class="fas fa-font"></i>&nbsp;&nbsp;<select class="fontSelect" (change)="changeFont()" id="fontSelect" name="font">
               <option class="roboto font-option"><font size="3">Roboto</font></option>
@@ -97,7 +97,7 @@
         <div class="col-2 left-nav p-0">
             <input type="file" id="image" name="multi-files" multiple (change)="onFileChanged($event)" accept="image/*"/>
           <label class="imageLabel d-flex justify-content-center align-items-center" for="image">
-            <button class="add-file mt-4 ml-4"><img src=" {{output}}" width="18px" height="auto">&nbsp;&nbsp;New</button>
+            <button class="add-file mt-4 ml-4"><img src="{{output}}" width="18px" height="auto">&nbsp;&nbsp;New</button>
           </label>
           <button class="action-btn mt-4 text-left"><i class="fas fa-magic"></i><font class="text-btn-left">Magic wand</font></button>
           <button class="action-btn mt-2 text-left"><i class="fas fa-arrows-alt"></i><font class="text-btn-left">Move</font></button>
@@ -151,15 +151,16 @@
 <!--                   [direction]="AngularResizeElementDirection.BOTTOM_RIGHT"-->
 <!--              ></div>-->
 <!--            </div>-->
-            <div class="col-8">
-              <app-white-paper src="{{output}}"></app-white-paper>
-              <div class="row">
-                <div class="col-12" style="padding-left:25px;">
-                  <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Contrast</button>
-                  <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Sharpness</button>
-                  <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Noise</button>
-                </div>
-              </div>
+          
+              <div class="col-8">
+                  <app-white-paper src="{{output}}"></app-white-paper>
+                  <div class="row">
+                    <div class="col-12" style="padding-left:25px;">
+                      <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Contrast</button>
+                      <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Sharpness</button>
+                      <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Noise</button>
+                    </div>
+                  </div>
             </div>
             <div class="col-4 pt-4">
               <app-nav-right></app-nav-right>
