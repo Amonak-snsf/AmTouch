@@ -79,3 +79,205 @@ width:auto;
 position:absolute;
 z-index:100;
 }
+
+
+
+#iconsCard{
+width:auto;
+height:auto;
+border:0 !important;
+box-shadow:none !important;
+background:none !important;
+z-index:200;
+position:absolute;
+margin-top:0px;
+margin-left:-150px;
+}
+
+.icostyle{
+font-size:45px;
+background:none;
+color:#22a6b3;
+outline:none;
+padding:0 !important;
+border:0;
+}
+
+.icostyle:hover{
+cursor: -webkit-grab;
+cursor: grab;
+}
+
+#ico1{
+display:none;
+}
+#ico2{
+display:none;
+}
+#ico3{
+display:none;
+}
+#ico4{
+display:none;
+}
+#ico5{
+display:none;
+}
+#ico6{
+display:none;
+}
+#ico7{
+display:none;
+}
+#ico8{
+display:none;
+}
+#ico9{
+display:none;
+}
+#ico10{
+display:none;
+}
+#ico11{
+display:none;
+}
+
+#ico12{
+display:none;
+}
+#ico13{
+display:none;
+}
+#ico14{
+display:none;
+}
+#ico15{
+display:none;
+}
+#ico16{
+display:none;
+}
+#ico17{
+display:none;
+}
+#ico18{
+display:none;
+}
+#ico19{
+display:none;
+}
+#ico20{
+display:none;
+}
+#ico21{
+display:none;
+}
+#ico22{
+display:none;
+}
+#ico23{
+display:none;
+}
+#ico24{
+display:none;
+}
+#ico25{
+display:none;
+}
+#ico26{
+display:none;
+}
+#ico27{
+display:none;
+}
+#ico28{
+display:none;
+}
+#ico29{
+display:none;
+}
+
+
+
+#stickerCard{
+width:auto;
+height:auto;
+border:0 !important;
+box-shadow:none !important;
+background:none !important;
+z-index:200;
+position:absolute;
+margin-top:0px;
+margin-left:-150px;
+}
+
+.stickImg:hover{
+cursor: -webkit-grab;
+cursor: grab;
+}
+
+#stick1{
+  display:none;
+}
+
+#stick2{
+  display:none;
+}
+#stick3{
+  display:none;
+}
+#stick4{
+  display:none;
+}
+#stick5{
+  display:none;
+}
+
+#stick6{
+  display:none;
+}
+
+#stick7{
+  display:none;
+}
+#stick8{
+  display:none;
+}
+#stick9{
+  display:none;
+}
+#stick10{
+  display:none;
+}
+#stick11{
+  display:none;
+}
+
+#stick12{
+  display:none;
+}
+#stick13{
+  display:none;
+}
+#stick14{
+  display:none;
+}
+#stick15{
+  display:none;
+}
+#stick16{
+  display:none;
+}
+#stick17{
+  display:none;
+}
+
+#stick18{
+  display:none;
+}
+#stick19{
+  display:none;
+}
+#stick20{
+  display:none;
+}

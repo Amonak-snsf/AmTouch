@@ -3,7 +3,7 @@
     <div class="col-12 paper-col d-flex justify-content-center align-items-center">
       <mat-card class="paper p-0 bg-white">
         <mat-card-content id="cropperId">
-          <app-image-dropper src="../../assets/imgs/prod3.jpg"></app-image-dropper>
+          <app-image-dropper src="../../assets/imgs/prod5.jpg"></app-image-dropper>
         </mat-card-content>
         <mat-card-content class="add-text-div d-flex justify-content-center" id="writerId">
           <div ngDraggable contenteditable type="text" class="add-text-input" id="addTextId" (click)="editTextAgain()" (focusout)="validAddText()">Add text...</div>
@@ -17,6 +17,64 @@
 <!--        <mat-card-content class="d-flex justify-content-left">-->
 <!--          <img  src="../../assets/imgs/man.jpg"/>-->
 <!--        </mat-card-content>-->
+      </mat-card>
+      <mat-card id="iconsCard" class="p-0">
+        <mat-card-content class="stickImg" >
+          <button id="ico1" class="icostyle" ngDraggable ><i class="fas fa-smile-wink"></i></button>
+          <button id="ico2" class="icostyle" ngDraggable ><i class="far fa-smile-wink"></i></button>
+          <button id="ico3" class="icostyle" ngDraggable ><i class="far fa-surprise"></i></button>
+          <button id="ico4" class="icostyle" ngDraggable ><i class="fas fa-surprise"></i></button>
+          <button id="ico5" class="icostyle" ngDraggable ><i class="fas fa-smile-beam"></i></button>
+          <button id="ico6" class="icostyle" ngDraggable ><i class="far fa-smile-beam"></i></button>
+          <button id="ico7" class="icostyle" ngDraggable ><i class="far fa-grin-stars"></i></button>
+          <button id="ico8" class="icostyle" ngDraggable ><i class="fas fa-grin-stars"></i></button>
+          <button id="ico9" class="icostyle" ngDraggable ><i class="far fa-grin-wink"></i></button>
+          <button id="ico10" class="icostyle" ngDraggable ><i class="fas fa-grin-wink"></i></button>
+          <button id="ico11" class="icostyle" ngDraggable ><i class="fas fa-grin-squint-tears"></i></button>
+          <button id="ico12" class="icostyle" ngDraggable ><i class="far fa-grin-squint"></i></button>
+          <button id="ico13" class="icostyle" ngDraggable ><i class="far fa-laugh-beam"></i></button>
+          <button id="ico14" class="icostyle" ngDraggable ><i class="fas fa-grin-hearts"></i></button>
+          <button id="ico15" class="icostyle" ngDraggable ><i class="far fa-kiss-wink-heart"></i></button>
+          <button id="ico16" class="icostyle" ngDraggable ><i class="far fa-grin-tears"></i></button>
+          <button id="ico17" class="icostyle" ngDraggable ><i class="fas fa-user-tie"></i></button>
+          <button id="ico18" class="icostyle" ngDraggable ><i class="fas fa-users"></i></button>
+          <button id="ico19" class="icostyle" ngDraggable ><i class="fas fa-user-graduate"></i></button>
+          <button id="ico20" class="icostyle" ngDraggable ><i class="far fa-bookmark"></i></button>
+          <button id="ico21" class="icostyle" ngDraggable ><i class="fas fa-bookmark"></i></button>
+          <button id="ico22" class="icostyle" ngDraggable ><i class="fas fa-shopping-cart"></i></button>
+          <button id="ico23" class="icostyle" ngDraggable ><i class="far fa-credit-card"></i></button>
+          <button id="ico24" class="icostyle" ngDraggable ><i class="fas fa-dollar-sign"></i></button>
+          <button id="ico25" class="icostyle" ngDraggable ><i class="fas fa-comments"></i></button>
+          <button id="ico26" class="icostyle" ngDraggable ><i class="far fa-comments"></i></button>
+          <button id="ico27" class="icostyle" ngDraggable ><i class="fas fa-comment-alt"></i></button>
+          <button id="ico28" class="icostyle" ngDraggable ><i class="far fa-comment-alt"></i></button>
+          <button id="ico29" class="icostyle" ngDraggable ><i class="fas fa-phone-alt"></i></button>
+        </mat-card-content>
+      </mat-card>
+      <mat-card id="stickerCard" class="p-0">
+        <mat-card-content class="stickImg" >
+          <img *ngIf="show" ngDraggable src="../../assets/imgs/stickers/buy.png" width="40px">
+          <img id="stick1" ngDraggable src="../../assets/imgs/stickers/commerce.png" width="40px">
+          <img id="stick2" ngDraggable src="../../assets/imgs/stickers/commerce1.png" width="40px">
+          <img id="stick3" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping.png" width="40px">
+          <img id="stick4" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping1.png" width="40px">
+          <img id="stick5" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping2.png" width="40px">
+          <img id="stick6" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping3.png" width="40px">
+          <img id="stick7" ngDraggable src="../../assets/imgs/stickers/commerce-and-shopping4.png" width="40px">
+          <img id="stick8" ngDraggable src="../../assets/imgs/stickers/guarantee.png" width="40px">
+          <img id="stick9" ngDraggable src="../../assets/imgs/stickers/guarantee1.png" width="40px">
+          <img id="stick10" ngDraggable src="../../assets/imgs/stickers/interface.png" width="40px">
+          <img id="stick11" ngDraggable src="../../assets/imgs/stickers/label-silhouette.png" width="40px">
+          <img id="stick12" ngDraggable src="../../assets/imgs/stickers/label-silhouette1.png" width="40px">
+          <img id="stick13" ngDraggable src="../../assets/imgs/stickers/label-silhouette2.png" width="40px">
+          <img id="stick14" ngDraggable src="../../assets/imgs/logo-blue.png" width="70px">
+          <img id="stick15" ngDraggable src="../../assets/imgs/stickers/shopping.png" width="40px">
+          <img id="stick16" ngDraggable src="../../assets/imgs/stickers/sign.png" width="40px">
+          <img id="stick17" ngDraggable src="../../assets/imgs/stickers/signs.png" width="40px">
+          <img id="stick18" ngDraggable src="../../assets/imgs/stickers/star.png" width="40px">
+          <img id="stick19" ngDraggable src="../../assets/imgs/stickers/star-trek.png" width="40px">
+          <img id="stick20" ngDraggable src="../../assets/imgs/stickers/tag.png" width="40px">
+        </mat-card-content>
       </mat-card>
     </div>
   </div>
