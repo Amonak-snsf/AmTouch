@@ -71,7 +71,7 @@ export class HomePageComponent implements OnInit {
       document.getElementById("writerId").style.zIndex = "1";
       document.getElementById("eraserId").style.zIndex = "100";
     }
-  
+
     readImg(img: File) {
       let reader = new FileReader();
       reader.onload = () => {
@@ -84,6 +84,23 @@ export class HomePageComponent implements OnInit {
     onFileChanged(event) {
       this.image = event.target.files[0];
       this.readImg(this.image);
+
+    shapes(){
+    document.getElementById("shapes").style.display = "block";
+    document.getElementById("stickers").style.display = "none";
+    document.getElementById("icons").style.display = "none";
     }
 
+    stickers(){
+    document.getElementById("shapes").style.display = "none";
+    document.getElementById("stickers").style.display = "block";
+    document.getElementById("icons").style.display = "none";
+
+    }
+
+    icons(){
+    document.getElementById("shapes").style.display = "none";
+    document.getElementById("stickers").style.display = "none";
+    document.getElementById("icons").style.display = "block";
+    }
 }

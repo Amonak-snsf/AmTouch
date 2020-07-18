@@ -96,3 +96,11 @@ background:#f33535;
 border:1px solid #f33535;
 color:black;
 }
+
+#stickers{
+display:none;
+}
+
+#icons{
+display:none;
+}

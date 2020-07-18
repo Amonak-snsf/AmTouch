@@ -13,7 +13,6 @@ export class WhitePaperComponent implements OnInit {
    image: File;
    output: any;
     constructor() {
-
       }
 
     ngOnInit() {
@@ -67,6 +66,7 @@ export class WhitePaperComponent implements OnInit {
       document.getElementById("eraserId").style.zIndex = "100";
     }
 
+
     readImg(img: File) {
       let reader = new FileReader();
       reader.onload = () => {
@@ -80,5 +80,8 @@ export class WhitePaperComponent implements OnInit {
       this.image = event.target.files[0];
       this.readImg(this.image);
     }
+
+
+
 
 }
