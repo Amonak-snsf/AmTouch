@@ -41,7 +41,7 @@ export class ImageDropperComponent implements OnInit {
     public imageElement: ElementRef;
 
     @Input("src")
-    public imageSource:any;
+    public imageSource: string;
 
     public imageDestination: string;
     private cropper: Cropper;
@@ -111,4 +111,6 @@ export class ImageDropperComponent implements OnInit {
         this.image = event.target.files[0];
         this.readImg(this.image);
       }
+
+      
 }

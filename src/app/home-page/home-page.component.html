@@ -95,9 +95,10 @@
       </div>
       <div class="row body-card">
         <div class="col-2 left-nav p-0">
+          
             <input type="file" id="image" name="multi-files" multiple (change)="onFileChanged($event)" accept="image/*"/>
           <label class="imageLabel d-flex justify-content-center align-items-center" for="image">
-            <button class="add-file mt-4 ml-4"><img src="{{output}}" width="18px" height="auto">&nbsp;&nbsp;New</button>
+            <button class="add-file mt-4 ml-4" ><img src="{{output}}" width="18px" height="auto">&nbsp;&nbsp;New</button>
           </label>
           <button class="action-btn mt-4 text-left"><i class="fas fa-magic"></i><font class="text-btn-left">Magic wand</font></button>
           <button class="action-btn mt-2 text-left"><i class="fas fa-arrows-alt"></i><font class="text-btn-left">Move</font></button>
@@ -153,7 +154,7 @@
 <!--            </div>-->
           
               <div class="col-8">
-                  <app-white-paper src="{{output}}"></app-white-paper>
+                  <app-white-paper src="{{output}"></app-white-paper>
                   <div class="row">
                     <div class="col-12" style="padding-left:25px;">
                       <button class="filters-btn"><i class="fas fa-tint"></i>&nbsp;&nbsp;Contrast</button>
